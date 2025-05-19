@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68b72ff8-abdf-488b-a18b-5db66d0a3d35" name="更改" comment="alg：初始化">
-      <change afterPath="$PROJECT_DIR$/alg_vis_common/src/main/java/tech/jianning/common/pojo/AlgorithmPojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/alg_vis_common/src/main/java/tech/jianning/common/utils/DataHandleUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/api/IBubbleSortService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/api/IMergeSortService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/impl/algorithm/BubbleSortServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/impl/algorithm/MergeSortServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/alg_vis_server/src/main/java/tech/jianning/server/controller/algorithm/AlgorithmController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/EasyApiProjectSetting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/EasyApiProjectSetting.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alg_vis_common/src/main/java/tech/jianning/common/exception/AlgVisErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_common/src/main/java/tech/jianning/common/exception/AlgVisErrorCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alg_vis_common/src/main/java/tech/jianning/common/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_common/src/main/java/tech/jianning/common/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alg_vis_common/src/main/java/tech/jianning/common/pojo/ResultResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_common/src/main/java/tech/jianning/common/pojo/ResultResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alg_vis_server/src/main/java/tech/jianning/server/config/WebSocketConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/alg_vis_server/src/main/java/tech/jianning/server/controller/algorithm/SortingWebSocketHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/alg_vis_server/src/main/java/tech/jianning/server/controller/users/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_server/src/main/java/tech/jianning/server/controller/users/AuthController.java" afterDir="false" />
-    </list>
+    <list default="true" id="68b72ff8-abdf-488b-a18b-5db66d0a3d35" name="更改" comment="alg：BubbleSort和MergeSort后端" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -195,7 +179,7 @@
       <workItem from="1747221599106" duration="601000" />
       <workItem from="1747292712206" duration="2389000" />
       <workItem from="1747295286957" duration="26467000" />
-      <workItem from="1747565622848" duration="19520000" />
+      <workItem from="1747565622848" duration="19882000" />
     </task>
     <task id="LOCAL-00001" summary="alg：初始化">
       <option name="closed" value="true" />
@@ -213,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747625525768</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="alg：BubbleSort和MergeSort后端">
+      <option name="closed" value="true" />
+      <created>1747655461731</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1747655461731</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +236,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="alg：初始化" />
-    <option name="LAST_COMMIT_MESSAGE" value="alg：初始化" />
+    <MESSAGE value="alg：BubbleSort和MergeSort后端" />
+    <option name="LAST_COMMIT_MESSAGE" value="alg：BubbleSort和MergeSort后端" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
