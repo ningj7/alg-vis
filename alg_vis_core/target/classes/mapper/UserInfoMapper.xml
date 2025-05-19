@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="tech.jianning.core.mapper.UserInfoMapper">
+    <select id="queryList" resultType="tech.jianning.common.pojo.UserPojo$ListResponse">
+        select *
+        from user_info
+        <where>
+            <if test="filter.id != null and filter.id != ''">
+                and id = #{filter.id}
+            </if>
+            <if test="filter.nickName != null and filter.nickName != ''">
+                and nick_name like concat('%',#{filter.nickName},'%')
+            </if>
+            <if test="filter.account != null and filter.account != ''">
+                and account = #{filter.account}
+            </if>
+            <if test="filter.status != null">
+                and status = #{filter.status}
+            </if>
+        </where>
+    </select>
+    <select id="queryOneByAccountAndPassword" resultType="tech.jianning.core.entity.UserInfo">
+        select *
+        from user_info
+        where account = #{request.account}
+          and password = #{request.password}
+    </select>
+</mapper>
+

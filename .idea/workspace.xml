@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="68b72ff8-abdf-488b-a18b-5db66d0a3d35" name="更改" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar:///Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/src.zip!/java/lang/Exception.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/src.zip!/java/lang/RuntimeException.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/src.zip!/java/lang/Throwable.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/src.zip!/javax/annotation/Resource.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.3.23/spring-web-5.3.23.jar!/org/springframework/http/ResponseEntity.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.3.23/spring-web-5.3.23.jar!/org/springframework/web/bind/annotation/ResponseBody.class" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="$MAVEN_REPOSITORY$" />
+        <option name="userSettingsFile" value="$USER_HOME$/.m2/settings1.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2uqUlXc8iDWzzjFfuVIwAlIBdsq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.alg_vis [clean].executor": "Run",
+    "Maven.alg_vis [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
+    "Maven.alg_vis [package].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.AlgVisServerApplication.executor": "Run",
+    "Spring Boot.alg_vis_server.executor": "Debug",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/yqg/project/alg_vis",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/alg_vis_admin/src/main/java/tech/jianning/admin" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="mojian-admin" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="mojian-admin" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration name="alg_vis_server" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="alg_vis_server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="tech.jianning.server.AlgVisServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.24978.46" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-IU-243.24978.46" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="68b72ff8-abdf-488b-a18b-5db66d0a3d35" name="更改" comment="" />
+      <created>1739952029000</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1739952029000</updated>
+      <workItem from="1742975750139" duration="1599000" />
+      <workItem from="1742977358735" duration="6480000" />
+      <workItem from="1742987196215" duration="70000" />
+      <workItem from="1742987319873" duration="22000" />
+      <workItem from="1743040532721" duration="685000" />
+      <workItem from="1743041232702" duration="18013000" />
+      <workItem from="1743142081838" duration="3187000" />
+      <workItem from="1743153128770" duration="5724000" />
+      <workItem from="1743386498222" duration="10010000" />
+      <workItem from="1743404783336" duration="1417000" />
+      <workItem from="1743646396394" duration="23000" />
+      <workItem from="1744015329901" duration="3268000" />
+      <workItem from="1744355376903" duration="1252000" />
+      <workItem from="1744697767973" duration="11245000" />
+      <workItem from="1744784424457" duration="3909000" />
+      <workItem from="1744800819065" duration="1000" />
+      <workItem from="1744872691627" duration="1415000" />
+      <workItem from="1744942362197" duration="2466000" />
+      <workItem from="1745036379222" duration="7022000" />
+      <workItem from="1745110018392" duration="632000" />
+      <workItem from="1745202112184" duration="3459000" />
+      <workItem from="1745287398873" duration="4706000" />
+      <workItem from="1745479137309" duration="1507000" />
+      <workItem from="1745561694263" duration="4034000" />
+      <workItem from="1745720901568" duration="600000" />
+      <workItem from="1745723946301" duration="606000" />
+      <workItem from="1745735798469" duration="858000" />
+      <workItem from="1745908671430" duration="3073000" />
+      <workItem from="1745980161658" duration="1377000" />
+      <workItem from="1746501261988" duration="613000" />
+      <workItem from="1746585279206" duration="1576000" />
+      <workItem from="1746612777996" duration="1954000" />
+      <workItem from="1746670708068" duration="775000" />
+      <workItem from="1746759510833" duration="1918000" />
+      <workItem from="1746959535520" duration="686000" />
+      <workItem from="1747016642052" duration="1000" />
+      <workItem from="1747130172961" duration="611000" />
+      <workItem from="1747188236282" duration="1102000" />
+      <workItem from="1747191884928" duration="1141000" />
+      <workItem from="1747221599106" duration="601000" />
+      <workItem from="1747292712206" duration="2389000" />
+      <workItem from="1747295286957" duration="26467000" />
+      <workItem from="1747565622848" duration="999000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
