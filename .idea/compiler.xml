@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="alg_vis_server" />
+        <module name="alg_vis_common" />
+        <module name="alg_vis_core" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mojian-admin" target="1.8" />
+      <module name="mojian-api" target="1.8" />
+      <module name="mojian-commom" target="1.8" />
+      <module name="mojian-file" target="1.8" />
+      <module name="mojian-server" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

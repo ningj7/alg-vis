@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SonarLintProjectSettings">
+    <option name="moduleMapping">
+      <map>
+        <entry key="alg_vis" value="blog" />
+        <entry key="alg_vis_core" value="alg_vis_admin" />
+      </map>
+    </option>
+  </component>
+</project>
