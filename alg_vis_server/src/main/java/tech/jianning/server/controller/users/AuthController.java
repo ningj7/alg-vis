@@ -23,7 +23,7 @@ public class AuthController {
   public ResultResponse<UserPojo.LoginResponse> login(@RequestBody UserPojo.LoginRequest request) {
     UserPojo.LoginResponse result = authService.login(request);
     if (result.getJwt().equals("-1")) {
-      return ResultResponse.error(AlgVisErrorCode.NOT_FOUND.getCode(), "用户名或密码错误");
+      return ResultResponse.error(AlgVisErrorCode.LOGIN_ERROR);
     }
     return ResultResponse.success(result);
   }

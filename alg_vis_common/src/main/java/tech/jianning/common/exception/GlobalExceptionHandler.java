@@ -1,10 +1,12 @@
 package tech.jianning.common.exception;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import tech.jianning.common.pojo.ResultResponse;
 
 @ControllerAdvice
+@Slf4j
 public class GlobalExceptionHandler {
 
   /**
@@ -15,7 +17,7 @@ public class GlobalExceptionHandler {
    */
   @ExceptionHandler(AlgVisException.class)
   public ResultResponse<Void> exceptionHandler(AlgVisException e) {
-    return ResultResponse.error(e.getErrorCode().getCode(), e.getMessage());
+    return ResultResponse.error(e.getErrorCode());
   }
 
   /**
@@ -23,6 +25,7 @@ public class GlobalExceptionHandler {
    */
   @ExceptionHandler(Exception.class)
   public ResultResponse<Void> handleGeneralException(Exception ex) {
-    return ResultResponse.error(500, "服务器内部错误: " + ex.getMessage());
+    log.error(ex.getMessage(), ex);
+    return ResultResponse.error(AlgVisErrorCode.INTERNAL_ERROR);
   }
 }

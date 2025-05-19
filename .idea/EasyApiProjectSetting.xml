@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="EasyApiProjectSetting">
+    <option name="postmanBuildExample" value="false" />
+    <option name="postmanCollections" value="alg_vis_server=5660f095-267e-4e93-ace5-8553eb6a1fc4&#10;" />
+    <option name="postmanExportMode" value="UPDATE" />
     <option name="postmanWorkspace" value="7df8ef34-3147-4e53-82bd-9139cd02af93" />
     <option name="yapiTokens" value="" />
   </component>
