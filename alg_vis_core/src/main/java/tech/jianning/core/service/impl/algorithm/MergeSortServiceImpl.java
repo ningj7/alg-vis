@@ -1,6 +1,5 @@
 package tech.jianning.core.service.impl.algorithm;
 
-import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import tech.jianning.common.pojo.AlgorithmPojo;
 import tech.jianning.common.utils.DataHandleUtils;
@@ -10,7 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-@RequiredArgsConstructor
 public class MergeSortServiceImpl implements IMergeSortService {
 
   @Override
