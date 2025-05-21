@@ -1,7 +1,0 @@
-tech/jianning/core/service/api/IAuthService.class
-tech/jianning/core/entity/BaseDomain.class
-tech/jianning/core/mapper/UserInfoMapper.class
-tech/jianning/core/service/impl/UserInfoServiceImpl.class
-tech/jianning/core/entity/UserInfo.class
-tech/jianning/core/service/api/IUserInfoService.class
-tech/jianning/core/service/impl/AuthServiceImpl.class
