@@ -6,6 +6,6 @@ import java.util.List;
 
 public interface IHeapSortService {
 
-  List<AlgorithmPojo.HeapSortResponse> heapSort(AlgorithmPojo.SortRequest request);
+    List<AlgorithmPojo.HeapSortResponse> heapSort(AlgorithmPojo.SortRequest request);
 
 }

@@ -13,44 +13,44 @@ import tech.jianning.common.pojo.UserPojo;
  */
 public interface IUserInfoService {
 
-  /**
-   * 通过ID查询单条数据
-   *
-   * @param id 主键
-   * @return 实例对象
-   */
-  ResultResponse<UserPojo.UserInfoResponse> queryById(Long id);
+    /**
+     * 通过ID查询单条数据
+     *
+     * @param id 主键
+     * @return 实例对象
+     */
+    ResultResponse<UserPojo.UserInfoResponse> queryById(Long id);
 
-  /**
-   * 新增数据
-   *
-   * @param userInfo 实例对象
-   * @return 是否成功
-   */
-  boolean insert(UserInfo userInfo);
+    /**
+     * 新增数据
+     *
+     * @param userInfo 实例对象
+     * @return 是否成功
+     */
+    boolean insert(UserInfo userInfo);
 
-  /**
-   * 修改数据
-   *
-   * @param userInfo 实例对象
-   * @return 是否成功
-   */
-  boolean update(UserInfo userInfo);
+    /**
+     * 修改数据
+     *
+     * @param userInfo 实例对象
+     * @return 是否成功
+     */
+    boolean update(UserInfo userInfo);
 
-  /**
-   * 通过主键删除数据
-   *
-   * @param id 主键
-   * @return 是否成功
-   */
-  boolean deleteById(Long id);
+    /**
+     * 通过主键删除数据
+     *
+     * @param id 主键
+     * @return 是否成功
+     */
+    boolean deleteById(Long id);
 
-  /**
-   * 查询列表
-   *
-   * @param request 请求参数
-   * @return 列表
-   */
-  PageInfo<UserPojo.ListResponse> queryList(int page, int size, UserPojo.ListRequest request);
+    /**
+     * 查询列表
+     *
+     * @param request 请求参数
+     * @return 列表
+     */
+    PageInfo<UserPojo.ListResponse> queryList(int page, int size, UserPojo.ListRequest request);
 
 }

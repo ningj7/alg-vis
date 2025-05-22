@@ -17,20 +17,20 @@ import tech.jianning.common.pojo.UserPojo;
 @RequestMapping("/auth")
 public class AuthController {
 
-  private final IAuthService authService;
+    private final IAuthService authService;
 
-  @PostMapping("/login")
-  public ResultResponse<UserPojo.LoginResponse> login(@RequestBody UserPojo.LoginRequest request) {
-    UserPojo.LoginResponse result = authService.login(request);
-    if (result.getJwt().equals("-1")) {
-      return ResultResponse.error(AlgVisErrorCode.LOGIN_ERROR);
+    @PostMapping("/login")
+    public ResultResponse<UserPojo.LoginResponse> login(@RequestBody UserPojo.LoginRequest request) {
+        UserPojo.LoginResponse result = authService.login(request);
+        if (result.getJwt().equals("-1")) {
+            return ResultResponse.error(AlgVisErrorCode.LOGIN_ERROR);
+        }
+        return ResultResponse.success(result);
     }
-    return ResultResponse.success(result);
-  }
 
-  @PostMapping("/register")
-  public ResultResponse<Integer> register(@RequestBody UserPojo.RegisterInfo request) {
-    return ResultResponse.success(authService.register(request));
-  }
+    @PostMapping("/register")
+    public ResultResponse<Integer> register(@RequestBody UserPojo.RegisterInfo request) {
+        return ResultResponse.success(authService.register(request));
+    }
 
 }

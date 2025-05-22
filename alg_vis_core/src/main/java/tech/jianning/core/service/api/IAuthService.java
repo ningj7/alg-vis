@@ -4,7 +4,7 @@ import tech.jianning.common.pojo.UserPojo;
 
 public interface IAuthService {
 
-  UserPojo.LoginResponse login(UserPojo.LoginRequest request);
+    UserPojo.LoginResponse login(UserPojo.LoginRequest request);
 
-  int register(UserPojo.RegisterInfo request);
+    int register(UserPojo.RegisterInfo request);
 }

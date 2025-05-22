@@ -6,6 +6,6 @@ import java.util.List;
 
 public interface IMergeSortService {
 
-  List<AlgorithmPojo.MergeSortResponse> mergeSort(AlgorithmPojo.SortRequest request);
+    List<AlgorithmPojo.MergeSortResponse> mergeSort(AlgorithmPojo.SortRequest request);
 
 }

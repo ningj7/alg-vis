@@ -20,34 +20,34 @@ import javax.persistence.Table;
 @NoArgsConstructor
 public class UserInfo extends BaseDomain {
 
-  /**
-   * 头像url
-   */
-  private String avatarUrl;
-  /**
-   * 昵称
-   */
-  private String nickName;
-  /**
-   * 性别
-   */
-  private Integer gender;
-  /**
-   * 状态:0,正常，1:禁用
-   */
-  private Integer status;
-  /**
-   * 账号
-   */
-  private String account;
-  /**
-   * 密码
-   */
-  private String password;
-  /**
-   * 角色:0,管理员，1:普通用户
-   */
-  private Integer role;
+    /**
+     * 头像url
+     */
+    private String avatarUrl;
+    /**
+     * 昵称
+     */
+    private String nickName;
+    /**
+     * 性别
+     */
+    private Integer gender;
+    /**
+     * 状态:0,正常，1:禁用
+     */
+    private Integer status;
+    /**
+     * 账号
+     */
+    private String account;
+    /**
+     * 密码
+     */
+    private String password;
+    /**
+     * 角色:0,管理员，1:普通用户
+     */
+    private Integer role;
 
 }
 

@@ -12,19 +12,19 @@ import tech.jianning.core.service.api.IAuthService;
 @RequiredArgsConstructor
 public class AuthServiceImpl implements IAuthService {
 
-  private final UserInfoMapper userInfoMapper;
+    private final UserInfoMapper userInfoMapper;
 
-  @Override
-  public UserPojo.LoginResponse login(UserPojo.LoginRequest request) {
-    UserInfo user = userInfoMapper.queryOneByAccountAndPassword(request);
-    if (user == null) return new UserPojo.LoginResponse("-1");
-    return new UserPojo.LoginResponse(String.valueOf(user.getId()));
-  }
+    @Override
+    public UserPojo.LoginResponse login(UserPojo.LoginRequest request) {
+        UserInfo user = userInfoMapper.queryOneByAccountAndPassword(request);
+        if (user == null) return new UserPojo.LoginResponse("-1");
+        return new UserPojo.LoginResponse(String.valueOf(user.getId()));
+    }
 
-  @Override
-  public int register(UserPojo.RegisterInfo request) {
-    UserInfo newUser = new UserInfo();
-    BeanUtils.copyProperties(request, newUser);
-    return userInfoMapper.insertSelective(newUser);
-  }
+    @Override
+    public int register(UserPojo.RegisterInfo request) {
+        UserInfo newUser = new UserInfo();
+        BeanUtils.copyProperties(request, newUser);
+        return userInfoMapper.insertSelective(newUser);
+    }
 }

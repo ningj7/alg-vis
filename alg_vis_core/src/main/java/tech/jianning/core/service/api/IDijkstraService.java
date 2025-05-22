@@ -6,6 +6,6 @@ import java.util.List;
 
 public interface IDijkstraService {
 
-  List<AlgorithmPojo.ShortestPathResponse> dijkstra(AlgorithmPojo.ShortestPathRequest request);
+    List<AlgorithmPojo.ShortestPathResponse> dijkstra(AlgorithmPojo.ShortestPathRequest request);
 
 }

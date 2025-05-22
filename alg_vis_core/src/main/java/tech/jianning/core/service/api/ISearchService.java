@@ -6,6 +6,6 @@ import java.util.List;
 
 public interface ISearchService {
 
-  List<AlgorithmPojo.SearchResponse> search(AlgorithmPojo.SearchRequest request);
+    List<AlgorithmPojo.SearchResponse> search(AlgorithmPojo.SearchRequest request);
 
 }

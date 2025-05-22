@@ -6,6 +6,6 @@ import java.util.List;
 
 public interface IBubbleSortService {
 
-  List<AlgorithmPojo.BubbleSortResponse> bubbleSort(AlgorithmPojo.SortRequest request);
+    List<AlgorithmPojo.BubbleSortResponse> bubbleSort(AlgorithmPojo.SortRequest request);
 
 }

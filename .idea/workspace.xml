@@ -4,18 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68b72ff8-abdf-488b-a18b-5db66d0a3d35" name="更改" comment="alg：BubbleSort和MergeSort后端">
-      <change afterPath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/api/IDijkstraService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/api/IHeapSortService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/api/ISearchService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/impl/algorithm/DijkstraServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/impl/algorithm/HeapSortServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/impl/algorithm/SearchServiceImpl.java" afterDir="false" />
+    <list default="true" id="68b72ff8-abdf-488b-a18b-5db66d0a3d35" name="更改" comment="alg：---">
+      <change afterPath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/api/IQuickSortService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/api/ISpanningTreeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/impl/algorithm/QuickSortServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/impl/algorithm/SpanningTreeServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alg_vis_common/src/main/java/tech/jianning/common/exception/AlgVisErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_common/src/main/java/tech/jianning/common/exception/AlgVisErrorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alg_vis_common/src/main/java/tech/jianning/common/exception/AlgVisException.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_common/src/main/java/tech/jianning/common/exception/AlgVisException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alg_vis_common/src/main/java/tech/jianning/common/exception/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_common/src/main/java/tech/jianning/common/exception/ErrorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alg_vis_common/src/main/java/tech/jianning/common/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_common/src/main/java/tech/jianning/common/exception/GlobalExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/alg_vis_common/src/main/java/tech/jianning/common/pojo/AlgorithmPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_common/src/main/java/tech/jianning/common/pojo/AlgorithmPojo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alg_vis_common/src/main/java/tech/jianning/common/pojo/ResultResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_common/src/main/java/tech/jianning/common/pojo/ResultResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alg_vis_common/src/main/java/tech/jianning/common/pojo/UserPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_common/src/main/java/tech/jianning/common/pojo/UserPojo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alg_vis_common/src/main/java/tech/jianning/common/utils/DataHandleUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_common/src/main/java/tech/jianning/common/utils/DataHandleUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/entity/BaseDomain.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/entity/BaseDomain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/entity/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/entity/UserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/mapper/UserInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/mapper/UserInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/api/IAuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/api/IAuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/api/IBubbleSortService.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/api/IBubbleSortService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/api/IDijkstraService.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/api/IDijkstraService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/api/IHeapSortService.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/api/IHeapSortService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/api/IMergeSortService.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/api/IMergeSortService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/api/ISearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/api/ISearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/api/IUserInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/api/IUserInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/impl/AuthServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/impl/UserInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/impl/UserInfoServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/impl/algorithm/BubbleSortServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/impl/algorithm/BubbleSortServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/impl/algorithm/DijkstraServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/impl/algorithm/DijkstraServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/impl/algorithm/HeapSortServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/impl/algorithm/HeapSortServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/impl/algorithm/MergeSortServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/impl/algorithm/MergeSortServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/impl/algorithm/SearchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_core/src/main/java/tech/jianning/core/service/impl/algorithm/SearchServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alg_vis_server/src/main/java/tech/jianning/server/AlgVisServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_server/src/main/java/tech/jianning/server/AlgVisServerApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/alg_vis_server/src/main/java/tech/jianning/server/controller/algorithm/AlgorithmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_server/src/main/java/tech/jianning/server/controller/algorithm/AlgorithmController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alg_vis_server/src/main/java/tech/jianning/server/controller/users/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_server/src/main/java/tech/jianning/server/controller/users/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alg_vis_server/src/main/java/tech/jianning/server/controller/users/UserInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/alg_vis_server/src/main/java/tech/jianning/server/controller/users/UserInfoController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +50,8 @@
       <list>
         <option value="Enum" />
         <option value="Kotlin Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -75,41 +98,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.alg_vis [clean].executor": "Run",
-    "Maven.alg_vis [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
-    "Maven.alg_vis [package].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "Spring Boot.AlgVisServerApplication.executor": "Run",
-    "Spring Boot.alg_vis_server.executor": "Debug",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/yqg/project/alg_vis",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "easyapi.settings.EasyApiConfigurable",
-    "vue.rearranger.settings.migration": "true",
-    "应用程序.AlgorithmPojo.executor": "Debug"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.alg_vis [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.alg_vis [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.alg_vis [package].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AlgVisServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.alg_vis_server.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/yqg/project/alg_vis&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;应用程序.AlgorithmPojo.executor&quot;: &quot;Debug&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/alg_vis_admin/src/main/java/tech/jianning/admin" />
@@ -195,7 +218,8 @@
       <workItem from="1747295286957" duration="26467000" />
       <workItem from="1747565622848" duration="21098000" />
       <workItem from="1747706657844" duration="17090000" />
-      <workItem from="1747793145067" duration="5762000" />
+      <workItem from="1747793145067" duration="21682000" />
+      <workItem from="1747879269176" duration="15472000" />
     </task>
     <task id="LOCAL-00001" summary="alg：初始化">
       <option name="closed" value="true" />
@@ -229,7 +253,47 @@
       <option name="project" value="LOCAL" />
       <updated>1747655775339</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="alg：sort、dij、search后端实现">
+      <option name="closed" value="true" />
+      <created>1747811875202</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1747811875202</updated>
+    </task>
+    <task id="LOCAL-00006" summary="alg：sort、dij、search后端实现">
+      <option name="closed" value="true" />
+      <created>1747811915933</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1747811915933</updated>
+    </task>
+    <task id="LOCAL-00007" summary="alg：sort、dij、search后端实现">
+      <option name="closed" value="true" />
+      <created>1747811921498</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1747811921498</updated>
+    </task>
+    <task id="LOCAL-00008" summary="alg：sort、dij、search后端实现">
+      <option name="closed" value="true" />
+      <created>1747812914685</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1747812914685</updated>
+    </task>
+    <task id="LOCAL-00009" summary="alg：---">
+      <option name="closed" value="true" />
+      <created>1747813018246</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1747813018246</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,35 +325,47 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="alg：初始化" />
     <MESSAGE value="alg：BubbleSort和MergeSort后端" />
-    <option name="LAST_COMMIT_MESSAGE" value="alg：BubbleSort和MergeSort后端" />
+    <MESSAGE value="alg：sort、dij、search后端实现" />
+    <MESSAGE value="alg：---" />
+    <option name="LAST_COMMIT_MESSAGE" value="alg：---" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/alg_vis_server/src/main/java/tech/jianning/server/controller/algorithm/AlgorithmController.java</url>
-          <line>38</line>
+          <line>40</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/alg_vis_server/src/main/java/tech/jianning/server/controller/algorithm/AlgorithmController.java</url>
-          <line>53</line>
+          <line>55</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/alg_vis_server/src/main/java/tech/jianning/server/controller/algorithm/AlgorithmController.java</url>
-          <line>68</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/alg_vis_server/src/main/java/tech/jianning/server/controller/algorithm/AlgorithmController.java</url>
-          <line>83</line>
+          <line>100</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/alg_vis_server/src/main/java/tech/jianning/server/controller/algorithm/AlgorithmController.java</url>
-          <line>98</line>
+          <line>115</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/alg_vis_server/src/main/java/tech/jianning/server/controller/algorithm/AlgorithmController.java</url>
+          <line>130</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/alg_vis_server/src/main/java/tech/jianning/server/controller/algorithm/AlgorithmController.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/alg_vis_server/src/main/java/tech/jianning/server/controller/algorithm/AlgorithmController.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

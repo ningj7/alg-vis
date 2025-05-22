@@ -11,7 +11,7 @@ import java.util.List;
 @Mapper
 public interface UserInfoMapper extends BaseMapper<UserInfo> {
 
-  List<UserPojo.ListResponse> queryList(@Param("filter") UserInfo filter);
+    List<UserPojo.ListResponse> queryList(@Param("filter") UserInfo filter);
 
-  UserInfo queryOneByAccountAndPassword(@Param("request")UserPojo.LoginRequest request);
+    UserInfo queryOneByAccountAndPassword(@Param("request") UserPojo.LoginRequest request);
 }

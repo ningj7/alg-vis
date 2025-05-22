@@ -17,85 +17,117 @@ import java.util.List;
 @RequiredArgsConstructor
 class AlgorithmController {
 
-  private final IBubbleSortService bubbleSortService;
-  private final IMergeSortService mergeSortService;
-  private final IHeapSortService heapSortService;
-  private final ISearchService searchService;
-  private final IDijkstraService dijkstraService;
+    private final IBubbleSortService bubbleSortService;
+    private final IMergeSortService mergeSortService;
+    private final IHeapSortService heapSortService;
+    private final IQuickSortService quickSortService;
+    private final ISearchService searchService;
+    private final IDijkstraService dijkstraService;
+    private final ISpanningTreeService spanningTreeService;
 
-  /**
-   * 冒泡排序
-   *
-   * @param request 请求参数
-   * @return 排序结果
-   */
-  @PostMapping("/bubbleSort")
-  public ResultResponse<List<AlgorithmPojo.BubbleSortResponse>> bubbleSort(@RequestBody AlgorithmPojo.SortRequest request) {
+    /**
+     * 冒泡排序
+     *
+     * @param request 请求参数
+     * @return 排序结果
+     */
+    @PostMapping("/bubbleSort")
+    public ResultResponse<List<AlgorithmPojo.BubbleSortResponse>> bubbleSort(@RequestBody AlgorithmPojo.SortRequest request) {
 
-    List<AlgorithmPojo.BubbleSortResponse> result = bubbleSortService.bubbleSort(request);
-    if (result.isEmpty()) {
-      return ResultResponse.error(AlgVisErrorCode.RUNNING_ERROR);
+        List<AlgorithmPojo.BubbleSortResponse> result = bubbleSortService.bubbleSort(request);
+        if (result.isEmpty()) {
+            return ResultResponse.error(AlgVisErrorCode.RUNNING_ERROR);
+        }
+        return ResultResponse.success(result);
     }
-    return ResultResponse.success(result);
-  }
 
-  /**
-   * 归并排序
-   *
-   * @param request 请求参数
-   * @return 排序结果
-   */
-  @PostMapping("/mergeSort")
-  public ResultResponse<List<AlgorithmPojo.MergeSortResponse>> mergeSort(@RequestBody AlgorithmPojo.SortRequest request) {
-    List<AlgorithmPojo.MergeSortResponse> result = mergeSortService.mergeSort(request);
-    if (result.isEmpty()) {
-      return ResultResponse.error(AlgVisErrorCode.RUNNING_ERROR);
+    /**
+     * 归并排序
+     *
+     * @param request 请求参数
+     * @return 排序结果
+     */
+    @PostMapping("/mergeSort")
+    public ResultResponse<List<AlgorithmPojo.MergeSortResponse>> mergeSort(@RequestBody AlgorithmPojo.SortRequest request) {
+        List<AlgorithmPojo.MergeSortResponse> result = mergeSortService.mergeSort(request);
+        if (result.isEmpty()) {
+            return ResultResponse.error(AlgVisErrorCode.RUNNING_ERROR);
+        }
+        return ResultResponse.success(result);
     }
-    return ResultResponse.success(result);
-  }
 
-  /**
-   * 堆排序
-   *
-   * @param request 请求参数
-   * @return 排序结果
-   */
-  @PostMapping("/heapSort")
-  public ResultResponse<List<AlgorithmPojo.HeapSortResponse>> heapSort(@RequestBody AlgorithmPojo.SortRequest request) {
-    List<AlgorithmPojo.HeapSortResponse> result = heapSortService.heapSort(request);
-    if (result.isEmpty()) {
-      return ResultResponse.error(AlgVisErrorCode.RUNNING_ERROR);
+    /**
+     * 堆排序
+     *
+     * @param request 请求参数
+     * @return 排序结果
+     */
+    @PostMapping("/heapSort")
+    public ResultResponse<List<AlgorithmPojo.HeapSortResponse>> heapSort(@RequestBody AlgorithmPojo.SortRequest request) {
+        List<AlgorithmPojo.HeapSortResponse> result = heapSortService.heapSort(request);
+        if (result.isEmpty()) {
+            return ResultResponse.error(AlgVisErrorCode.RUNNING_ERROR);
+        }
+        return ResultResponse.success(result);
     }
-    return ResultResponse.success(result);
-  }
 
-  /**
-   * 搜索
-   *
-   * @param request 请求参数
-   * @return 搜索结果
-   */
-  @PostMapping("/search")
-  public ResultResponse<List<AlgorithmPojo.SearchResponse>> search(@RequestBody AlgorithmPojo.SearchRequest request) {
-    List<AlgorithmPojo.SearchResponse> result = searchService.search(request);
-    if (result.isEmpty()) {
-      return ResultResponse.error(AlgVisErrorCode.RUNNING_ERROR);
+    /**
+     * 快速排序
+     *
+     * @param request 请求参数
+     * @return 排序结果
+     */
+    @PostMapping("/quickSort")
+    public ResultResponse<List<AlgorithmPojo.QuickSortResponse>>quickSort(@RequestBody AlgorithmPojo.SortRequest request) {
+        List<AlgorithmPojo.QuickSortResponse> result = quickSortService.quickSort(request);
+        if (result.isEmpty()) {
+            return ResultResponse.error(AlgVisErrorCode.RUNNING_ERROR);
+        }
+        return ResultResponse.success(result);
     }
-    return ResultResponse.success(result);
-  }
 
-  /**
-   * Dijkstra
-   *
-   * @param request 请求参数
-   * @return 最短路径结果
-   */
-  @PostMapping("/dijkstra")
-  public ResultResponse<List<AlgorithmPojo.ShortestPathResponse>> dijkstra(@RequestBody AlgorithmPojo.ShortestPathRequest request) {
-    List<AlgorithmPojo.ShortestPathResponse> result = dijkstraService.dijkstra(request);
-    if (result.isEmpty()) {
-      return ResultResponse.error(AlgVisErrorCode.RUNNING_ERROR);
+    /**
+     * 搜索
+     *
+     * @param request 请求参数
+     * @return 搜索结果
+     */
+    @PostMapping("/search")
+    public ResultResponse<List<AlgorithmPojo.SearchResponse>> search(@RequestBody AlgorithmPojo.SearchRequest request) {
+        List<AlgorithmPojo.SearchResponse> result = searchService.search(request);
+        if (result.isEmpty()) {
+            return ResultResponse.error(AlgVisErrorCode.RUNNING_ERROR);
+        }
+        return ResultResponse.success(result);
     }
-    return ResultResponse.success(result);
-  }
+
+    /**
+     * Dijkstra
+     *
+     * @param request 请求参数
+     * @return 最短路径结果
+     */
+    @PostMapping("/dijkstra")
+    public ResultResponse<List<AlgorithmPojo.ShortestPathResponse>> dijkstra(@RequestBody AlgorithmPojo.ShortestPathRequest request) {
+        List<AlgorithmPojo.ShortestPathResponse> result = dijkstraService.dijkstra(request);
+        if (result.isEmpty()) {
+            return ResultResponse.error(AlgVisErrorCode.RUNNING_ERROR);
+        }
+        return ResultResponse.success(result);
+    }
+
+    /**
+     * 最小生成树
+     *
+     * @param request 请求参数
+     * @return 最小生成树结果
+     */
+    @PostMapping("/spanningTree")
+    public ResultResponse<List<AlgorithmPojo.SpanningTreeResponse>> spanningTree(@RequestBody AlgorithmPojo.SpanningTreeRequest request) {
+        List<AlgorithmPojo.SpanningTreeResponse> result = spanningTreeService.spanningTree(request);
+        if (result.isEmpty()) {
+            return ResultResponse.error(AlgVisErrorCode.RUNNING_ERROR);
+        }
+        return ResultResponse.success(result);
+    }
 }
