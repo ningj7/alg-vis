@@ -1,8 +1,6 @@
 package tech.jianning.core.service.api;
 
 import com.github.pagehelper.PageInfo;
-import tech.jianning.core.entity.UserInfo;
-import tech.jianning.common.pojo.ResultResponse;
 import tech.jianning.common.pojo.UserPojo;
 
 /**
@@ -15,35 +13,17 @@ public interface IUserInfoService {
 
     /**
      * 通过ID查询单条数据
-     *
-     * @param id 主键
      * @return 实例对象
      */
-    ResultResponse<UserPojo.UserInfoResponse> queryById(Long id);
-
-    /**
-     * 新增数据
-     *
-     * @param userInfo 实例对象
-     * @return 是否成功
-     */
-    boolean insert(UserInfo userInfo);
+    UserPojo.UserInfoResponse queryOne();
 
     /**
      * 修改数据
      *
-     * @param userInfo 实例对象
+     * @param request 实例对象
      * @return 是否成功
      */
-    boolean update(UserInfo userInfo);
-
-    /**
-     * 通过主键删除数据
-     *
-     * @param id 主键
-     * @return 是否成功
-     */
-    boolean deleteById(Long id);
+    int update(UserPojo.UpdateRequest request);
 
     /**
      * 查询列表

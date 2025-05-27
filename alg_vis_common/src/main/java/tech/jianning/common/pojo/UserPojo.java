@@ -28,7 +28,7 @@ public class UserPojo {
     @Data
     @AllArgsConstructor
     public static class LoginResponse {
-        private String jwt;
+        private String token;
     }
 
     @Data
@@ -129,5 +129,33 @@ public class UserPojo {
          * 密码
          */
         private String password;
+    }
+
+    @Data
+    public static class UpdateRequest {
+        /**
+         * 主键
+         */
+        private Long id;
+        /**
+         * 昵称
+         */
+        private String nickName;
+        /**
+         * 性别
+         */
+        private Integer gender;
+        /**
+         * 角色
+         */
+        private Integer role;
+        /**
+         * 状态
+         */
+        private Integer status;
+        /**
+         * 是否恢复默认密码
+         */
+        private Boolean resetPassword;
     }
 }

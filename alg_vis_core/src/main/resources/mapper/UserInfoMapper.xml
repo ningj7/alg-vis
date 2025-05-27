@@ -25,5 +25,11 @@
         where account = #{request.account}
           and password = #{request.password}
     </select>
+    <select id="queryByAccountAndNickName" resultType="tech.jianning.core.entity.UserInfo">
+        select *
+        from user_info
+        where account = #{account}
+           or nick_name = #{nickName}
+    </select>
 </mapper>
 

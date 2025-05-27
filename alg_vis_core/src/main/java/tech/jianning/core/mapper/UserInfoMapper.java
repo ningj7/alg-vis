@@ -14,4 +14,6 @@ public interface UserInfoMapper extends BaseMapper<UserInfo> {
     List<UserPojo.ListResponse> queryList(@Param("filter") UserInfo filter);
 
     UserInfo queryOneByAccountAndPassword(@Param("request") UserPojo.LoginRequest request);
+
+    List<UserInfo> queryByAccountAndNickName(@Param("account") String account, @Param("nickName") String nickName);
 }

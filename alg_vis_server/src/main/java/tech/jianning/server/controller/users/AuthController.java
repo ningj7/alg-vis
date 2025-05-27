@@ -22,15 +22,21 @@ public class AuthController {
     @PostMapping("/login")
     public ResultResponse<UserPojo.LoginResponse> login(@RequestBody UserPojo.LoginRequest request) {
         UserPojo.LoginResponse result = authService.login(request);
-        if (result.getJwt().equals("-1")) {
+        if (result.getToken().equals("-1")) {
             return ResultResponse.error(AlgVisErrorCode.LOGIN_ERROR);
+        } else if (result.getToken().equals("-2")) {
+            return ResultResponse.error(AlgVisErrorCode.ACCOUNT_ABNORMAL);
         }
         return ResultResponse.success(result);
     }
 
     @PostMapping("/register")
     public ResultResponse<Integer> register(@RequestBody UserPojo.RegisterInfo request) {
-        return ResultResponse.success(authService.register(request));
+        int result = authService.register(request);
+        if (result == 0) {
+            return ResultResponse.error(AlgVisErrorCode.REGISTER_ERROR);
+        }
+        return ResultResponse.success(result);
     }
 
 }

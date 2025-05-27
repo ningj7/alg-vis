@@ -20,14 +20,13 @@ public class UserInfoController {
     private final IUserInfoService userInfoService;
 
     /**
-     * 根据id查询用户信息
+     * 获取当前登录用户信息
      *
-     * @param userId 用户id
      * @return 用户信息
      */
     @GetMapping("/query")
-    public ResultResponse<UserPojo.UserInfoResponse> getUserInfo(@RequestParam("userId") String userId) {
-        return userInfoService.queryById(Long.valueOf(userId));
+    public ResultResponse<UserPojo.UserInfoResponse> getUserInfo() {
+        return ResultResponse.success(userInfoService.queryOne());
     }
 
     /**
@@ -44,6 +43,11 @@ public class UserInfoController {
         @RequestParam(value = "pageNo", defaultValue = "1") int pageNo,
         @RequestParam(value = "pageSize", defaultValue = "10") int pageSize) {
         return ResultResponse.success(userInfoService.queryList(pageNo, pageSize, request));
+    }
+
+    @PostMapping("/update")
+    public ResultResponse<Integer> update(@RequestBody UserPojo.UpdateRequest request) {
+        return ResultResponse.success(userInfoService.update(request));
     }
 
 }

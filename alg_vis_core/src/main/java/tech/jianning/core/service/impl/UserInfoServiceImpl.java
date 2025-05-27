@@ -3,13 +3,15 @@ package tech.jianning.core.service.impl;
 import com.github.pagehelper.PageInfo;
 import com.github.pagehelper.page.PageMethod;
 import lombok.RequiredArgsConstructor;
+import lombok.SneakyThrows;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
+import tech.jianning.common.context.BaseContext;
+import tech.jianning.common.pojo.UserPojo;
+import tech.jianning.common.utils.EncryptUtil;
 import tech.jianning.core.entity.UserInfo;
 import tech.jianning.core.mapper.UserInfoMapper;
 import tech.jianning.core.service.api.IUserInfoService;
-import tech.jianning.common.pojo.ResultResponse;
-import tech.jianning.common.pojo.UserPojo;
 
 
 /**
@@ -25,25 +27,22 @@ public class UserInfoServiceImpl implements IUserInfoService {
     private final UserInfoMapper userInfoMapper;
 
     @Override
-    public ResultResponse<UserPojo.UserInfoResponse> queryById(Long id) {
+    public UserPojo.UserInfoResponse queryOne() {
         UserPojo.UserInfoResponse userInfoResponse = new UserPojo.UserInfoResponse();
-        BeanUtils.copyProperties(userInfoMapper.selectByPrimaryKey(id), userInfoResponse);
-        return ResultResponse.success(userInfoResponse);
+        BeanUtils.copyProperties(userInfoMapper.selectByPrimaryKey(BaseContext.current.get().getId()), userInfoResponse);
+        return userInfoResponse;
     }
 
-    @Override
-    public boolean insert(UserInfo userInfo) {
-        return userInfoMapper.insertSelective(userInfo) > 0;
-    }
 
+    @SneakyThrows
     @Override
-    public boolean update(UserInfo userInfo) {
-        return userInfoMapper.updateByPrimaryKey(userInfo) > 0;
-    }
-
-    @Override
-    public boolean deleteById(Long id) {
-        return userInfoMapper.deleteByPrimaryKey(id) > 0;
+    public int update(UserPojo.UpdateRequest request) {
+        UserInfo userInfo = new UserInfo();
+        BeanUtils.copyProperties(request, userInfo);
+        if (request.getResetPassword()) {
+            userInfo.setPassword(EncryptUtil.md5("123456")); // 默认密码
+        }
+        return userInfoMapper.updateByPrimaryKeySelective(userInfo);
     }
 
     @Override
