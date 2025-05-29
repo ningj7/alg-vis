@@ -138,6 +138,10 @@ public class UserPojo {
          */
         private Long id;
         /**
+         * 头像url
+         */
+        private String avatarUrl;
+        /**
          * 昵称
          */
         private String nickName;
@@ -153,6 +157,10 @@ public class UserPojo {
          * 状态
          */
         private Integer status;
+        /**
+         * 密码
+         */
+        private String password;
         /**
          * 是否恢复默认密码
          */

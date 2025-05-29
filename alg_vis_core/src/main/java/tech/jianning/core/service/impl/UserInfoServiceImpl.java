@@ -39,7 +39,13 @@ public class UserInfoServiceImpl implements IUserInfoService {
     public int update(UserPojo.UpdateRequest request) {
         UserInfo userInfo = new UserInfo();
         BeanUtils.copyProperties(request, userInfo);
-        if (request.getResetPassword()) {
+        if(userInfo.getPassword()!= null && !userInfo.getPassword().isEmpty()) {
+            userInfo.setPassword(EncryptUtil.md5(userInfo.getPassword()));
+        }
+        if (userInfo.getId() == -1) {
+            userInfo.setId(BaseContext.current.get().getId());
+        }
+        if (request.getResetPassword() != null && request.getResetPassword()) {
             userInfo.setPassword(EncryptUtil.md5("123456")); // 默认密码
         }
         return userInfoMapper.updateByPrimaryKeySelective(userInfo);
